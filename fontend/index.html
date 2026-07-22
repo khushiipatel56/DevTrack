@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTrack - Developer Progress Dashboard</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+         <nav>
+            <h1>💻 DevTrack</h1>
+            <ul>
+                 <li><a href="#hero">Home</a></li>
+                 <li><a href="#dashboard">Dashboard</a></li>
+                 <li><a href="#planner">Planner</a></li>
+                 <li><a href="#progress">Progress</a></li>
+                 <li><a href="#goals">Goals</a></li>
+                 <li><a href="#footer">Contact</a></li>
+            </ul>
+            <button id="themeBtn">🌙 Dark Mode</button>
+         </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Track Your Developer Journey 🚀</h2>
+            <p>
+             Plan your learning, manage daily tasks, track your progress, and achieve your developer goals—all in one place.
+            </p>
+            <button id="startBtn">Start Tracking 🚀</button>
+        </section>
+        <p class="hero-note">
+        Stay consistent. Small progress every day leads to big achievements.
+        </p>
+
+        <section id="dashboard">
+
+    <h2>Dashboard</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>📚 Learning Modules </h3>
+            <h2>4 Learning Modules</h2>
+            <p>HTML • CSS • JavaScript • React</p>
+        </div>
+
+        <div class="card">
+            <h3>✅ Tasks</h3>
+            <h1 id="taskCount">0 Tasks</h1>
+            <p>Manage your daily study tasks</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Monthly Goals</h3>
+            <h1 id="goalCount">0 Goals</h1>
+            <p>Track your monthly learning goals</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="planner">
+    <h2>Daily Study Planner</h2>
+
+    <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter your task"
+    >
+
+    <button id="addTaskBtn">Add Task</button>
+
+    <ul id="taskList"></ul>
+</section>
+<section id="progress">
+
+    <h2>Developer Roadmap</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>🌐 Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React (Basics)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>💻 Data Structures & Algorithms</h3>
+            <ul>
+                <li>Arrays</li>
+                <li>Strings</li>
+                <li>Linked Lists</li>
+                <li>Trees</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>☕ Programming</h3>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>OOP Basics</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🛠 Developer Tools</h3>
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Vercel</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+        
+<section id="goals">
+    <section id="goals">
+
+    <h2>My Goals</h2>
+
+    <ul class="goal-list">
+
+        <li><input type="checkbox" class="goalCheck" checked> Complete HTML</li>
+
+        <li><input type="checkbox" class="goalCheck" checked> Complete CSS</li>
+
+        <li><input type="checkbox" class="goalCheck"> Learn JavaScript</li>
+
+        <li><input type="checkbox" class="goalCheck"> Learn React</li>
+
+        <li><input type="checkbox" class="goalCheck"> Build 5 Projects</li>
+
+        <li><input type="checkbox" class="goalCheck"> Solve 100 DSA Problems</li>
+
+    </ul>
+
+</section>
+    </main>
+    <footer id="footer">
+        <p>© 2026 DevTrack • Designed & Developed by Khushi Patel</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
